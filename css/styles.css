@@ -1,0 +1,29 @@
+/* =========================================*/
+/*                                          */
+/*              Guillermo Diañez            */
+/*               DianezMotorsport           */
+/*             proyecto pagina web          */  
+/*==========================================*/
+.main{
+    background-color: black ;
+    margin: 5%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    }
+body {
+    background-image:url(../img/fondo.jpg);
+}
+.hero{
+    background-image: url(../img/hero.jpg);
+    padding: 15%;
+    margin: auto
+    
+}
+.hero h1 {
+    color:#0abab5;
+    font-size: 3em;
+}
+
+
+
+
