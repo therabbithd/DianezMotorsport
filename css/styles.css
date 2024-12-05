@@ -4,10 +4,13 @@
 /*               DianezMotorsport           */
 /*             proyecto pagina web          */  
 /*==========================================*/
+@font-face {
+    font-family: DianezMotorsport;
+    src: url(../fonts/BrittanySignature.ttf);
+}
 .main{
     background-color: black ;
     margin: 5%;
-    text-align: center;
     font-family: Arial, sans-serif;
     }
 body {
@@ -15,13 +18,23 @@ body {
 }
 .hero{
     background-image: url(../img/hero.jpg);
-    padding: 15%;
-    margin: auto
+    height: 40%;
+    padding: 10%;
     
 }
 .hero h1 {
     color:#0abab5;
-    font-size: 3em;
+    font-size: 5em;
+    font-family: DianezMotorsport;
+    font-weight: bold;
+    text-align: center;
+
+}
+.hero h2 {
+    text-align: center;
+    color: black;
+    
+
 }
 
 
