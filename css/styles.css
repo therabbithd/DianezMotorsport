@@ -30,12 +30,34 @@ body {
     text-align: center;
 
 }
-.hero h2 {
-    text-align: center;
-    color: black;
-    
 
+.menu .logo{
+    width: 7%;
+    height: 7%;
+    padding: 10px;
+    
 }
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0abab5;
+    
+    color: white;
+    font-family: Arial, sans-serif;
+}
+    a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    a:hover{
+        display: block;
+        color: black;
+        transition: color 0.3s ease
+    }
+
+
 
 
 
