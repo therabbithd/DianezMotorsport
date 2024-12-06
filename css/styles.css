@@ -75,7 +75,11 @@ a:hover{
 .categorias{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
 }
 .categoria{
     padding: 10px;
@@ -83,11 +87,12 @@ a:hover{
     background-color: #333;
     color: white;
     opacity: 80%;
+    ;
 }
+
 .categoria:hover{
     opacity: 100%;
     transition: color 0.3s ease
-    cursor:
 }
 .hero-resistencia{
     background-image: url(../img/resistencia-hero.jpg);
@@ -96,11 +101,17 @@ a:hover{
 }
 .hero-resistencia h1{
     color:#0abab5;
-    font-size: 10em;
+    font-size:500%;
     font-family: DianezMotorsport;
     text-align: center;
 }
-
+@media screen and (width<650px){
+    .categoria img{
+        width: 245px;
+        height: 245px;
+        margin: 10px;
+    }
+}
 
 
 
