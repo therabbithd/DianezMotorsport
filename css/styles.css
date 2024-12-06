@@ -10,9 +10,7 @@
 }
 .main{
     background-color: black ;
-    
     font-family: Arial, sans-serif;
-    
     color: white;
     }
 body {
@@ -62,7 +60,7 @@ a:hover{
     flex-direction: column;
     justify-content: space-around;  
     align-items: center; 
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .Sobre-Nosotros h1{
     text-align: center;
@@ -73,6 +71,23 @@ a:hover{
 }  
 .Sobre-Nosotros img{
     width: 60%;
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.categoria{
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    opacity: 80%;
+}
+.categoria:hover{
+    opacity: 100%;
+    transition: color 0.3s ease
+    cursor:
 }
 
 
