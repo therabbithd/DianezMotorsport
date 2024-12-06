@@ -10,8 +10,10 @@
 }
 .main{
     background-color: black ;
-    margin: 5%;
+    
     font-family: Arial, sans-serif;
+    
+    color: white;
     }
 body {
     background-image:url(../img/fondo.jpg);
@@ -42,20 +44,37 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #0abab5;
-    
     color: white;
     font-family: Arial, sans-serif;
 }
-    a{
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-    }
-    a:hover{
-        display: block;
-        color: black;
-        transition: color 0.3s ease
-    }
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+a:hover{
+    display: block;
+    color: black;
+    transition: color 0.3s ease
+}
+.Sobre-Nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    align-items: center; 
+    padding-bottom: 10px;
+}
+.Sobre-Nosotros h1{
+    text-align: center;
+}
+.Sobre-Nosotros p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.Sobre-Nosotros img{
+    width: 60%;
+}
+
 
 
 
