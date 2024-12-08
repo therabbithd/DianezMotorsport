@@ -132,8 +132,25 @@ body {
 .informacion{
     display: flex;
     flex-direction: row;
-    justify-self: center;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 10px;
 }
+.calendario{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-right: 30px;
+}
+.calendario td, .calendario th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+}
+.calendario table{
+    border-collapse: collapse;
+}
+
+
 
  .formtexto{
     display: flex;
@@ -197,8 +214,18 @@ body {
     text-decoration: none;
     text-decoration: dashed;
 }
+.hero-wec{
+    display: flex;
+    background-image: url(../img/wec-hero.jpg); 
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
 
-
+}
+.hero-wec img{
+    color: #ddd;
+    im
+}
 
 @media screen and (width<650px){
     .categoria img{
@@ -208,6 +235,12 @@ body {
     }
     .menu a {
         font-size: 12px;
+    }
+    .informacion{
+        flex-direction: column;
+    }
+    .informacion iframe{
+        width: 100%;
     }
 }
 
