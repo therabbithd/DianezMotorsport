@@ -1,8 +1,9 @@
 /* =========================================*/
-/*                                          */
 /*              Guillermo Diañez            */
 /*               DianezMotorsport           */
 /*             proyecto pagina web          */  
+/*                 para 1 DAM               */
+/*              CPIFP ALAN TURING           */
 /*==========================================*/
 @font-face {
     font-family: DianezMotorsport;
@@ -45,12 +46,13 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
-a{
+.menu a{
     color: white;
     text-decoration: none;
     padding: 10px;
+    font-size: 24px;
 }
-a:hover{
+.menu a:hover{
     display: block;
     color: black;
     transition: color 0.3s ease
@@ -64,10 +66,12 @@ a:hover{
 }
 .Sobre-Nosotros h1{
     text-align: center;
+    padding-top: 10px;
 }
 .Sobre-Nosotros p{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
 }  
 .Sobre-Nosotros img{
     width: 60%;
@@ -82,17 +86,30 @@ a:hover{
 
 }
 .categoria{
+    display: flex;
     padding: 10px;
     text-align: center;
     background-color: #333;
     color: white;
-    opacity: 80%;
-    ;
-}
-
-.categoria:hover{
     opacity: 100%;
-    transition: color 0.3s ease
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.categoria p{
+    width: 600px;
+}
+.categoria a{
+    display: flex;
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    width: 19%;
+    padding: 10px;
+    margin: auto;
+}
+.categoria a:hover{
+    background-color: #1f1e1e;
+  
 }
 .hero-resistencia{
     background-image: url(../img/resistencia-hero.jpg);
@@ -105,11 +122,92 @@ a:hover{
     font-family: DianezMotorsport;
     text-align: center;
 }
+.hero-IMSA{
+    display: flex;
+    background-image: url(../img/imsa-hero.jpg); 
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+ .formtexto{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:30px ;
+    flex-wrap: nowrap;
+    margin-left:20%;
+    margin-right:20%
+}
+
+.formulario h1{
+    color:#0abab5;
+    font-size:500%;
+    font-family: DianezMotorsport;
+}
+.formscheck {
+    margin-left:20%;
+    margin-right:20%;
+    margin-bottom: 30px;
+
+}
+
+.formulario input{
+    padding-right: 15%;;
+}
+.formulario input[id="Edad"]{
+    padding: 0%;
+}
+
+
+.formulario label{
+    font-size: large;
+    
+    
+}
+.hero-formula{
+    display: flex;
+    background-image: url(../img/f1-hero.jpg); 
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.hero-formula h1{
+    color:#0abab5;
+    font-size:500%;
+    font-family: DianezMotorsport;
+
+}
+.botonmas{
+    background-color: #04AA6D;
+    padding: 1%;
+    opacity: 80%;
+}
+.botonmas:hover{
+    cursor: pointer;
+    opacity: 100%;
+    transition: color 0.3s ease
+}
+.botonmas p{
+    color: white;
+    text-decoration: none;
+    text-decoration: dashed;
+}
+
+
+
 @media screen and (width<650px){
     .categoria img{
         width: 245px;
         height: 245px;
         margin: 10px;
+    }
+    .menu a {
+        font-size: 12px;
     }
 }
 

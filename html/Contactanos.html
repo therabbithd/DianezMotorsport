@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <img src="../img/Dianez.svg" alt="logo" class="logo">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./html/resistencia.html">Resistencia</a>
+            <a href="./html/Formula.html"> Tipo Formula</a>
+            <a href="./html/Contactanos.html">Contactanos</a>
+        </div>
+        
+        <div class="formulario">
+            <h1>Recibe información</h1>
+            <form action="test.php"  method="dialog" class="formtexto">
+                <label for="Correo" >Correo</label>
+                <input type="email" id="Correo"  placeholder="ej:correo@dominio.com">
+                <br>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" placeholder="ej:John" required>
+                <br>
+                <label for="Ape1">Primer Apellido</label>
+                <input type="text" id="Ape1" placeholder="ej:Doe" required>
+                <br>
+                <label for="Ape2">Segundo Apellido</label>
+                <input type="text" id="Ape1">
+                <br>
+                <label for="Edad">Edad</label>
+                <input type="number" id="Edad">
+                <br>
+                <label for="Sug">Pon tus sugerencias(opcional)</label>
+                <textarea id="Sug" name="Sug" rows="4" cols="50" placeholder="Escribe aqui"></textarea>
+                <br>
+                
+            </form>
+            <form action="test.php" method="dialog" class="formscheck">
+                <p>¿Quieres recibir nuestra newsletter?</p>
+                <input type="radio" name="news" id="si">
+                <label for="si">Si</label>
+                <br>
+                <input type="radio" name="news" id="no">
+                <label for="no">No</label>
+                <p>¿Que categorias sigues?</p>
+                <input type="checkbox" name="" id="Res">
+                <label for="Res">Resistencia</label>
+                <br>
+                <input type="checkbox" name="" id="For">
+                <label for="For">Formula</label>
+                <br>
+                <input type="checkbox" name="" id="Otr">
+                <label for="Otr">Otros</label>
+                <br>
+                <input type="submit" value="Enviar">
+        </div>
+    </div>
+</body>
+</html>
