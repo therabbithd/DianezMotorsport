@@ -7,8 +7,9 @@
 /*==========================================*/
 @font-face {
     font-family: DianezMotorsport;
-    src: url(../fonts/BrittanySignature.ttf);
+    src: url(../fonts/Sunfish\ Original.otf);
 }
+/*Página home*/
 .main{
     background-color: black ;
     font-family: Arial, sans-serif;
@@ -18,6 +19,7 @@ body {
     background-image:url(../img/fondo.jpg);
 }
 .hero{
+    
     background-image: url(../img/hero.jpg);
     height: 40%;
     padding: 10%;
@@ -25,13 +27,17 @@ body {
 }
 .hero h1 {
     color:#0abab5;
-    font-size: 5em;
+    font-size:500%;
     font-family: DianezMotorsport;
     font-weight: bold;
     text-align: center;
+    border: solid;
+    background-color: #ffffffb6;
+    margin: auto;
+
 
 }
-
+/*menu*/
 .menu .logo{
     width: 7%;
     height: 7%;
@@ -57,6 +63,7 @@ body {
     color: black;
     transition: color 0.3s ease
 }
+/*recursos generales*/
 .Sobre-Nosotros{
     display: flex;
     flex-direction: column;
@@ -94,6 +101,7 @@ body {
     opacity: 100%;
     flex-direction: column;
     margin-bottom: 10px;
+    height: 600px;
 }
 .categoria p{
     width: 600px;
@@ -111,24 +119,76 @@ body {
     background-color: #1f1e1e;
   
 }
-.hero-resistencia{
+/*página resistencia*/
+hero-resistencia{
+    display: block;
     background-image: url(../img/resistencia-hero.jpg);
     height: 40%;
     padding: 10%;
 }
-.hero-resistencia h1{
+hero-resistencia h1{
     color:#0abab5;
     font-size:500%;
     font-family: DianezMotorsport;
     text-align: center;
+    border: solid;
+    background-color: #ffffffb6;
+    margin: auto;
 }
+
+/*página IMSA*/
 .hero-IMSA{
     display: flex;
     background-image: url(../img/imsa-hero.jpg); 
     padding: 10%;
     align-items: center;
     justify-content: center;
+    height: 150px;
 }
+.hero-IMSA img{
+    display: block;
+    
+}
+/*pagina WEC*/
+.hero-wec{
+    display: flex;
+    background-image: url(../img/wec-hero.jpg); 
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+
+}
+/* página fórmula*/
+.hero-formula{
+    display: flex;
+    background-image: url(../img/f1-hero.jpg); 
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.hero-formula h1{
+    color:#0abab5;
+    font-size:500%;
+    font-family: DianezMotorsport;
+    text-align: center;
+    border: solid;
+    background-color: #ffffffb6;
+    width:500%;
+    margin: auto;
+
+}
+/*pagina f1*/
+.hero-f1{
+    display: flex;
+    background-image: url(../img/f1-hero.avif); 
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+    background-position: 20%;
+    height:150px ;
+}
+/*categorias*/
 .informacion{
     display: flex;
     flex-direction: row;
@@ -140,6 +200,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     margin-right: 30px;
+    
 }
 .calendario td, .calendario th{
     border: 1px solid #ddd;
@@ -148,9 +209,10 @@ body {
 }
 .calendario table{
     border-collapse: collapse;
+    color: #ddd;
 }
 
-
+/*formulario*/
 
  .formtexto{
     display: flex;
@@ -183,22 +245,17 @@ body {
 
 .formulario label{
     font-size: large;
-    
-    
 }
-.hero-formula{
-    display: flex;
-    background-image: url(../img/f1-hero.jpg); 
-    padding: 10%;
-    align-items: center;
-    justify-content: center;
+.mapa iframe{
+    margin-left:20%;
+    margin-right:20%;
+    margin-bottom: 30px;
+    width: 60%;
 }
-.hero-formula h1{
-    color:#0abab5;
-    font-size:500%;
-    font-family: DianezMotorsport;
+.mapa{
+    text-align: center;
+}
 
-}
 .botonmas{
     background-color: #04AA6D;
     padding: 1%;
@@ -214,24 +271,19 @@ body {
     text-decoration: none;
     text-decoration: dashed;
 }
-.hero-wec{
-    display: flex;
-    background-image: url(../img/wec-hero.jpg); 
-    padding: 10%;
-    align-items: center;
-    justify-content: center;
 
-}
-.hero-wec img{
-    color: #ddd;
-    im
-}
+
 
 @media screen and (width<650px){
+    .categoria {
+        width: 80%;
+    }
     .categoria img{
-        width: 245px;
-        height: 245px;
-        margin: 10px;
+        width: 100%;
+    }
+    .categoria p{
+        width: 100%;
+        text-align:left
     }
     .menu a {
         font-size: 12px;
@@ -242,6 +294,12 @@ body {
     .informacion iframe{
         width: 100%;
     }
+    .calendario table{
+        font-size:65%;
+        width:100%;
+    }
+
+
 }
 
 
