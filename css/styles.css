@@ -187,6 +187,19 @@ hero-resistencia h1{
     justify-content: center;
     background-position: 20%;
     height:150px ;
+    width: 100%;
+
+}
+/*pagina indy*/
+.hero-indy{
+    display: flex;
+    background-image: url(../img/R\ \(3\).jpg); 
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+    background-position-x: 80%;
+    background-position-y: 30%;
+    height:150px ;
 }
 /*categorias*/
 .informacion{
