@@ -11,9 +11,12 @@
 }
 /*Página home*/
 .main{
+    display: flex;
+    flex-direction: column;
     background-color: black ;
     font-family: Arial, sans-serif;
     color: white;
+    
     }
 body {
     background-image:url(../img/fondo.jpg);
@@ -34,9 +37,26 @@ body {
     border: solid;
     background-color: #ffffffb6;
     margin: auto;
-
+    
+}
+.listas{
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    border: solid gold;
+    padding: 3%;
+    margin-bottom: 3%;
+    width: 50%;
 
 }
+.lista{
+    margin-right: 60px;
+}
+
+    
+
+
 /*menu*/
 .menu .logo{
     width: 7%;
@@ -51,6 +71,7 @@ body {
     background-color: #0abab5;
     color: white;
     font-family: Arial, sans-serif;
+    position:static;
 }
 .menu a{
     color: white;
@@ -60,6 +81,41 @@ body {
 }
 .menu a:hover{
     display: block;
+    color: black;
+    transition: color 0.3s ease
+}
+/*footer*/
+footer{
+    background-color: #0abab5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+siguenos{
+    float: left;
+    margin-left: 10%;
+}
+siguenos img{
+    opacity: 80%;
+    margin-left: 10px;
+}
+siguenos img:hover{
+    cursor:pointer;
+    opacity:100%;
+    transition: opacity 0.3s ease
+}
+textmenu{
+    float: right;
+    margin-right:10%;
+    margin-top: 2.5%;
+}
+textmenu a{
+    text-decoration: none;
+    color: white;
+}
+textmenu a:hover{
     color: black;
     transition: color 0.3s ease
 }
@@ -86,10 +142,11 @@ body {
 .categorias{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-around ;
     align-items: center;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
+    
 
 }
 .categoria{
@@ -102,6 +159,8 @@ body {
     flex-direction: column;
     margin-bottom: 10px;
     height: 600px;
+    margin: auto;
+    box-shadow: 10px 5px 5px #3f3e3e;
 }
 .categoria p{
     width: 600px;
@@ -119,6 +178,8 @@ body {
     background-color: #1f1e1e;
   
 }
+
+
 /*página resistencia*/
 hero-resistencia{
     display: block;
@@ -147,6 +208,7 @@ hero-resistencia h1{
 }
 .hero-IMSA img{
     display: block;
+    position: relative;
     
 }
 /*pagina WEC*/
@@ -323,6 +385,16 @@ hero-resistencia h1{
     }
     .hero-wec img {
         width: 80%;
+    }
+    .listas{
+        flex-direction: column;
+        padding: 0;
+        border: none;
+        width: 80%;
+    }
+    .lista h1{
+        font-size:medium;
+        
     }
 
 
